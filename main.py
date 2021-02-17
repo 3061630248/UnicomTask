@@ -238,6 +238,8 @@ def pointsLottery_task():
         #如果用户未设置此值，将不会自动抽奖
         if os.environ.get('LOTTERY_NUM') != None:
             num = os.environ.get('LOTTERY_NUM')
+        else:
+            num = 0
         for i in range(int(num)):
             #用积分兑换抽奖机会
             client.get('https://m.client.10010.com/dailylottery/static/integral/duihuan?goldnumber=10&banrate=30&usernumberofjsp=' + numjsp)
