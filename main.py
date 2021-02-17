@@ -279,13 +279,11 @@ def dongaoPoints_task():
 
 if __name__ == '__main__':
     if client != False:
-        dongaoPoints_task()
         gameCenterSign_Task()
         day100Integral_task()
         dongaoPoints_task()
         pointsLottery_task()
         daySign_task()
-        gameCenterSign_Task()
         woTree_task()
         luckDraw_task()
         openBox_task()
